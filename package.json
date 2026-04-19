@@ -1,0 +1,25 @@
+{
+  "name": "todo-easy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./bin/run.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "consola": "^3.4.2",
+    "picocolors": "^1.1.1",
+    "yargs": "^18.0.0"
+  },
+  "directories": {
+    "lib": "src",
+    "bin": "bin"
+  },
+  "bin": {
+    "sonya-run": "./bin/run"
+  }
+}
