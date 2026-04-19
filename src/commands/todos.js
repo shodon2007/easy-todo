@@ -47,6 +47,9 @@ const getTodos = () => {
     let todos = null;
     try {
         todos = JSON.parse(fs.readFileSync(path.resolve("storage", "tasks.json")));
+        todos = todos.sort((a, b) => {
+            return a.dueDate - b.dueDate ;
+        })
     } catch (e) {
         fs.writeFileSync(path.resolve("storage", "tasks.json"), "[]");
         return [];
