@@ -1,6 +1,5 @@
 export const getTodoItemFields = () => {
     return {
-        id: "Уникальный идентификатор",
         title: 'Заголовок',
         descr: 'Описание',
         category: 'Категория',
